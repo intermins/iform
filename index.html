@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CopyForm | by ITME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class="wrapper">
+        <form action method="post">
+            <div class="splitter">
+                <h1 class="name">Sign In</h1>
+                <div class="links">
+                    <li><a href="#"><img src="images/googleplus.png"></a></li>
+                    <li><a href="#"><img src="images/facebook.png"></a></li>
+                    <li><a href="#"><img src="images/github.png"></a></li>
+                    <li><a href="#"><img src="images/linkedln.png"></a></li>
+                </div>
+            </div>
+            <div class="splitter">
+                <span>or use your email password</span>
+                <br>
+                <div class="container">
+                    <input type="text" name="name" placeholder="Name" style="display: none;">
+                    <input type="email" name="email" placeholder="Email" required="none">
+                    <input type="password" name="password" placeholder="Password" required>
+                    <a href="#" id="forgotPassword">Forget your password?</a>
+                    <input type="submit" class="button" value="SIGN IN">
+                </div>
+            </div>
+        </form>
+        <div class="welcome">
+            <div class="chooser">
+                <div class="flexBox">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all site features</p>
+                    <button onclick="toggle();" class="button white" id="choose">SIGN UP</button>
+                </div>
+                <div class="flexBox">
+                    <h1>Welcome back!</h1>
+                    <p>Enter your personal details to use all site features</p>
+                    <button onclick="toggle()" class="button white" id="choose">SIGN IN</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
